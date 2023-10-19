@@ -22,18 +22,32 @@ const clientes = [
 ]
 
 const $ = id => document.getElementById(id);
-
+let cliente;
 $("ingresarButton").addEventListener('click', function () {
     let nip = parseInt($('txtNip').value)
-    const cliente = obtenerClienteNip(nip);
+     cliente = obtenerClienteNip(nip);
     if(cliente){
         $('notificacion').style.display = "none";
         $("nip").style.display = "none";
         $("acciones").style.display = "flex";
     }else{
+        
         $('notificacion').style.display = "block";
+
         $('notificacion').textContent = "El NIP NO ES VALIDO";
     }
 })
+$('btnSaldo').addEventListener('click',function(){
+    if(cliente){
+        $('clientes').innerHTML=`<p class='saldo'>Tu saldo dispobible es: ${cliente.saldo}</p>`;
+    }
+});
+$('btnAddMonto').addEventListener('click',function(){
+
+});
+
+$('btnRetirar').addEventListener('click',function(){
+
+});
 
 const obtenerClienteNip = nip => clientes.find(cliente => cliente.nip == nip)

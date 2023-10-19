@@ -80,7 +80,7 @@ a {
 .textbox{
     padding: 2rem;
     border-radius: 1rem;
-    
+    text-align: center;
 }
 .notice{
     background-color: var(--gamboge);
@@ -91,6 +91,16 @@ a {
     border-radius: 1rem;
     text-align: center;
     display: none;
+    
+}
+.ingresar{
+    cursor: pointer;
+}
+.saldo{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem;
 }
 @media (max-width: 768px) {
     .acciones{

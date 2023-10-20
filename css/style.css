@@ -128,6 +128,12 @@ input[type="number"] {
     color: var(--cornell-red);
     font-weight: 700;
 }
+.form_nip{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 @media (max-width: 768px) {
     .acciones{
         flex-direction: column;

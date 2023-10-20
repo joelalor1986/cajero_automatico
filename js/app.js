@@ -105,7 +105,7 @@ $('clientes').addEventListener('click', function (event) {
                 <p>Tu nuevo saldo es: <span>${cliente.saldo}</span></p>`
             }
             else{
-                $('notificacion').style.display = "block";
+                $('notificacion').style.display = "block"; 
                 
                  $('notificacion').textContent = `No puedes retirar ese monto ya que tu saldo minimo debe ser (${saldoMinimo})`;
  

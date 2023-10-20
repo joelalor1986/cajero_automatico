@@ -93,6 +93,16 @@ a {
     display: none;
     
 }
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Para Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
 .ingresar{
     cursor: pointer;
 }
@@ -101,6 +111,22 @@ a {
     font-size: 2rem;
     font-weight: 700;
     margin: 2rem;
+}
+.clientes{
+    text-align: center;
+    font-size: 3rem;
+}
+.clientes span{
+    color: var(--cornell-red);
+    font-weight: 700;
+}
+.datos-clientes{
+    font-size: 3rem;
+    display: none;
+}
+.datos-clientes span{
+    color: var(--cornell-red);
+    font-weight: 700;
 }
 @media (max-width: 768px) {
     .acciones{
